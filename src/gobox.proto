@@ -5,13 +5,22 @@ option go_package = "github.com/stephenjayakar/go-box/gobox";
 package gobox;
 
 service GoBox {
-    rpc Meow(MeowRequest) returns (MeowResponse) {}
+    rpc UploadFile(UploadFileRequest) returns UploadFileResponse {}
+    rpc GetFile(GetFileRequest) returns GetFileResponse {}
 }
 
-message MeowRequest {
-    string name = 1;
+message UploadFileRequest {
+
 }
 
-message MeowResponse {
-    string meow = 1;
+message UploadFileResponse {
+
+}
+
+message GetFileRequest {
+
+}
+
+message GetFileResponse {
+
 }
